@@ -1,7 +1,7 @@
-FROM php:8.0-fpm-alpine3.14
+FROM php:8.2-fpm-alpine
 
 RUN apk --update --no-cache add curl ca-certificates nginx
-RUN apk add php8 php8-xml php8-exif php8-fpm php8-session php8-soap php8-openssl php8-gmp php8-pdo_odbc php8-json php8-dom php8-pdo php8-zip php8-mysqli php8-sqlite3 php8-pdo_pgsql php8-bcmath php8-gd php8-odbc php8-pdo_mysql php8-pdo_sqlite php8-gettext php8-xmlreader php8-bz2 php8-iconv php8-pdo_dblib php8-curl php8-ctype php8-phar php8-fileinfo php8-mbstring php8-tokenizer php8-simplexml php8-mongodb php8-pear php8-dev gcc musl-dev make
+RUN apk add php8.2 php8.2-xml php8.2-exif php8.2-fpm php8.2-session php8.2-soap php8.2-openssl php8.2-gmp php8.2-pdo_odbc php8.2-json php8.2-dom php8.2-pdo php8.2-zip php8.2-mysqli php8.2-sqlite3 php8.2-pdo_pgsql php8.2-bcmath php8.2-gd php8.2-odbc php8.2-pdo_mysql php8.2-pdo_sqlite php8.2-gettext php8.2-xmlreader php8.2-bz2 php8.2-iconv php8.2-pdo_dblib php8.2-curl php8.2-ctype php8.2-phar php8.2-fileinfo php8.2-mbstring php8.2-tokenizer php8.2-simplexml php8.2-mongodb php8.2-pear php8.2-dev gcc musl-dev make
 RUN pecl install mongodb-1.16.0
 COPY --from=composer:latest  /usr/bin/composer /usr/bin/composer
 
