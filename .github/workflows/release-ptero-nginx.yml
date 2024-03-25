@@ -27,5 +27,3 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: |
-            ghcr.io/bali0531-real/nginx-ptero:8.1
