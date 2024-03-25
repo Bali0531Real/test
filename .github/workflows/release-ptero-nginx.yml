@@ -27,4 +27,5 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: bali0531real/test:8.1
+          tags: |
+            ghcr.io/bali0531real/test:8.1
