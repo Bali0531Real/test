@@ -28,4 +28,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/Bali0531Real/nginx-ptero:8.1
+            ghcr.io/bali0531-real/nginx-ptero:8.1
